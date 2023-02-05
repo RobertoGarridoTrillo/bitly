@@ -14,7 +14,7 @@ export class ShortInterceptor implements HttpInterceptor {
   constructor() {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    const TOKEN = '78d82aaef959d5bfa884f385735563ed6b09d8b5';
+    const TOKEN = '';
 
     request = request.clone( {setHeaders: {Authorization: "Beares ", TOKEN}});
     // @ts-ignore
